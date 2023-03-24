@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/styles/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mx-auto pb-20">
+            <nav>
+                <div class="flex items-center">
+                    <a href="/" class="-ml-10 mr-3"><span>Back</span></a>
+                    <h2>Question 1</h2>
+                </div>
+            </nav>
+            <div class="m-2">
+                <p class="my-2">
+                    The following picture is responsive. Try to view this page in different devices such as mobile and desktop.
+                </p>
+                <picture>
+                    <source
+                        type="image/webp" 
+                        media="(max-width: 600px)"
+                        sizes="(max-width: 300px) 640px, 1024px"
+                        srcset="
+                        /images/grand_canyon_national_park_portrait-sm.webp 640w,
+                        /images/grand_canyon_national_park_portrait-lg.webp 1024w
+                        "
+                    />
+                    <source
+                        type="image/webp" 
+                        media="(min-width: 601px)"
+                        sizes="(max-width: 640px) 640px, 1024px"
+                        srcset="
+                        /images/grand_canyon_national_park-sm.webp 640w,
+                        /images/grand_canyon_national_park-lg.webp 1024w
+                        "
+                    />
+                    <img src="/images/grand_canyon_national_park.jpg" alt="Grand Canyon National Park"/>
+                </picture>
+            </div>
+        </div>
+    </body>
+</html>
